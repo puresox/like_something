@@ -1,0 +1,38 @@
+{
+	"manifest_version":2,
+	"name":"QQ空间自动点赞",
+	"version":"0.0.1",
+	"description":"QQ空间一键点赞插件",
+	"icons":{
+		"626":"icons/icon_626.png"
+	},
+	
+	
+	"background":{
+		"scripts": ["/js/background.js"]
+	},
+	
+
+	"browser_action":{
+		"default_icon":{
+			"626":"icons/icon_626.png"
+		},
+		"default_title":"点赞",
+		"default_popup":"popup.html"
+	},
+	
+	"permissions":[
+		"tabs","http://*/*"
+	],
+
+	"options_page": "options.html",
+
+	"content_scripts":[
+		{
+			"matches":["*://user.qzone.qq.com/*"],
+			"js":["js/like_auto.js"]
+			//"run_at":"document_end"
+		}
+	]
+	
+}
