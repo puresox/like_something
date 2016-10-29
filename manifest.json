@@ -5,7 +5,7 @@
 	"version":"0.0.1",
 	"description":"QQ空间一键点赞插件",
 	"icons":{
-		"626":"icons/icon_626.png"
+		"147":"icons/icon_147.png"
 	},
 	
 	
@@ -16,7 +16,7 @@
 	
 
 	"browser_action":{
-		"default_icon":"icons/icon_626.png",
+		"default_icon":"icons/icon_147.png",
 		"default_title":"点赞",
 		"default_popup":"popup.html"
 	},
