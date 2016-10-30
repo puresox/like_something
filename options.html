@@ -4,8 +4,21 @@
         <title>选项</title>
     </head>
     <body>
-        <input type="text" id="user" />
-        <input type="text" id="num" />
+        <p>
+            请选择点赞模式
+        </p>
+            <form>
+                <input type="radio" checked="checked" name="qq" value="qq" />
+                指定QQ号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QQ号
+                <input type="text" id="user" />
+                <select name="like_mode" style="height:20px;">
+                    <option value="like">点赞</option>
+                    <option value="test">测试用（不点赞）</option>
+                </select>
+                </br>
+                <input type="radio" name="order" value="order" />
+                按顺序点赞
+            </form>
         <input type="button" id="save" value="保存" />
         <script src="js/options.js"></script>
     </body>
