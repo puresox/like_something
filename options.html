@@ -8,15 +8,19 @@
             请选择点赞模式
         </p>
             <form>
-                <input type="radio" checked="checked" name="qq" value="qq" />
-                指定QQ号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QQ号
-                <input type="text" id="user" />
-                <select name="like_mode" style="height:20px;">
-                    <option value="like">点赞</option>
-                    <option value="test">测试用（不点赞）</option>
-                </select>
+                <input type="radio" checked="checked" name="mode" value="0" />
+                指定QQ号
+                <p>
+                    &nbsp;&nbsp;QQ号:
+                    <input type="text" id="user" />
+                    &nbsp;&nbsp;模式:
+                    <select name="like_mode" style="height:20px;">
+                        <option value="like">点赞</option>
+                        <option value="test">测试用（不点赞）</option>
+                    </select>
+                </p>
                 </br>
-                <input type="radio" name="order" value="order" />
+                <input type="radio" name="mode" value="1" />
                 按顺序点赞
             </form>
         <input type="button" id="save" value="保存" />
