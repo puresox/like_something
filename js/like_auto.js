@@ -10,6 +10,7 @@ chrome.runtime.sendMessage('This string has no use', function(response){
 
 function presslike_mode0()
 {
+	window.open('http://user.qzone.qq.com/'+user);
 }
 
 function presslike_mode1()
