@@ -35,7 +35,6 @@ function presslike_mode1()
 				{
 					setTimeout("changeLikeButton_mode0("+i+")",500)
 				}
-				
 				//console.log("running well");
 			}
 		}
