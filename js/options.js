@@ -1,7 +1,6 @@
 var user = localStorage.user || 0;
 var like_mode=document.getElementsByName('like_mode');
 var like_mode_send;
-console.log('hello world');
 var mode= document.getElementsByName('mode');
 var mode_send;
 document.getElementById('user').value = user;
