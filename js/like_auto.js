@@ -2,6 +2,7 @@ var like=document.getElementsByClassName('item qz_like_btn_v3')[0];
 var user;
 var mode;
 var like_mode;
+var choice;
 chrome.runtime.sendMessage('This string has no use', function(response){
 	mode=response[0];
 	user=response[1];
