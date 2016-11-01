@@ -10,7 +10,10 @@ chrome.runtime.sendMessage('This string has no use', function(response){
 
 function presslike_mode0()
 {
+<<<<<<< HEAD
 	
+=======
+>>>>>>> origin/master
 }
 
 function presslike_mode1()
@@ -50,6 +53,7 @@ function changeLikeButton_mode1(i)
 	document.getElementsByClassName('item qz_like_btn_v3')[i].style.color="red";
 }
 
+<<<<<<< HEAD
 
 function like_auto()
 {
@@ -63,3 +67,21 @@ function like_auto()
 }
 
 like_auto();
+=======
+function runScripts()
+{
+	if(mode==0)
+	{
+		presslike_mode0();
+		console.log("presslike_mode0()");
+	}
+	else
+	{
+		presslike_mode1();
+		console.log("presslike_mode1()");
+	}
+}
+
+setInterval("runScripts()",3000);
+
+>>>>>>> origin/master
