@@ -7,12 +7,10 @@ chrome.runtime.sendMessage('This string has no use', function(response){
 	user=response[1];
 	like_mode=response[2];
 });
-
 function presslike_mode0()
 {
-	window.open('http://user.qzone.qq.com/'+user);
+	alert(fuck);
 }
-
 function presslike_mode1()
 {
 	var n=document.getElementsByClassName('f-user-avatar q_namecard f-s-a');
@@ -53,12 +51,16 @@ function changeLikeButton_mode1(i)
 	document.getElementsByClassName('item qz_like_btn_v3')[i].style.color="red";
 }
 
-if(mode==0)
+function like_auto()
 {
-	setInterval("presslike_mode0()",3000);
+	if(mode==0)
+	{
+		setInterval("presslike_mode0()",3000);
+	}
+	else{
+		setInterval("presslike_mode1()",3000);
+	}
 }
-else
-{
-	setInterval("presslike_mode1()",3000);
-}
+
+like_auto();
 
