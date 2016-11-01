@@ -24,8 +24,18 @@ function presslike_mode1()
 			if(document.getElementsByClassName('item qz_like_btn_v3')[i].getAttribute('data-clicklog')=="like")		//判定是否已经点赞了
 			{
 				if(choice==1)
+				{
 					document.getElementsByClassName('item qz_like_btn_v3')[i].click();
-				setTimeout("changeLikeButton("+i+")",500)
+				}
+				if(like_mode==1)
+				{
+					setTimeout("changeLikeButton_mode1("+i+")",500)
+				}
+				else
+				{
+					setTimeout("changeLikeButton_mode0("+i+")",500)
+				}
+				
 				//console.log("running well");
 			}
 		}
