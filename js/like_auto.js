@@ -10,7 +10,6 @@ chrome.runtime.sendMessage('This string has no use', function(response){
 
 function presslike_mode0()
 {
-	window.open("http://www.jb51.net");
 }
 
 function presslike_mode1()
