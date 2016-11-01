@@ -1,5 +1,6 @@
 var user = localStorage.user || 0;
-var num = localStorage.num || 0;	
+var num = localStorage.num || 0;
+console.log("123");	
 var mode= document.getElementsByName('mode');
 var mode_send=localStorage.mode || 0;
  for (var i = 0; i < mode.length; i++) 
