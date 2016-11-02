@@ -5,7 +5,24 @@ var like_mode;
 
 function presslike_mode0()
 {
-	
+	var n=document.getElementsByClassName('item qz_like_btn_v3');
+	var i;
+	for(i=0;i<n.length;i++)
+	{
+		if(n[i].getAttribute('data-clicklog')=="like")
+		{
+			if(like_mode==1)
+			{
+				setTimeout("changeLikeButton_mode1("+i+")",500);
+				n[i].click();
+			}
+			else
+			{
+				setTimeout("changeLikeButton_mode0("+i+")",500);
+			}
+			console.log("running well");
+		}
+	}
 }
 
 function presslike_mode1()
