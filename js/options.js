@@ -1,4 +1,4 @@
-//name:like_mode 指定QQ模式下的点赞/不点赞
+//name:like_mode 点赞/不点赞
 //name:mode 点赞模式
 
 var user = localStorage.user || 0;

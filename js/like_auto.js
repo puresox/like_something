@@ -1,9 +1,9 @@
 var like=document.getElementsByClassName('item qz_like_btn_v3')[0];
-var user;
-var mode;
-var like_mode;
+var user;		//Q号
+var mode;		//点赞模式
+var like_mode;		//点赞与否
 
-function presslike_mode0()
+function presslike_mode0()		//点赞列表所有
 {
 	var n=document.getElementsByClassName('item qz_like_btn_v3');
 	var i;
@@ -20,12 +20,12 @@ function presslike_mode0()
 			{
 				setTimeout("changeLikeButton_mode0("+i+")",500);
 			}
-			console.log("running well");
+			console.log("running mode0");
 		}
 	}
 }
 
-function presslike_mode1()
+function presslike_mode1()		//点赞指定好友
 {
 	var n=document.getElementsByClassName('f-user-avatar q_namecard f-s-a');
 
