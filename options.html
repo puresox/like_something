@@ -7,21 +7,23 @@
         <p>
             请选择点赞模式
         </p>
+        模式:
+        <select  style="height:20px;">
+            <option name="like_mode"  value="1">点赞</option>
+            <option name="like_mode"  value="0">测试用（不点赞）</option>
+        </select>
+        <br/>
+        <br/>
             <form>
                 <input type="radio" checked="checked" name="mode" value="0" />
-                指定QQ号
+                只点赞主页中对应Q号的好友
                 <p>
                     &nbsp;&nbsp;QQ号:
                     <input type="text" id="user" />
-                    &nbsp;&nbsp;模式:
-                    <select  style="height:20px;">
-                        <option name="like_mode"  value="1">点赞</option>
-                        <option name="like_mode"  value="0">测试用（不点赞）</option>
-                    </select>
                 </p>
                 </br>
                 <input type="radio" name="mode" value="1" />
-                按顺序点赞
+                点赞主页中所有的好友
             </form>
         <input type="button" id="save" value="保存" />
         <script src="js/options.js"></script>
