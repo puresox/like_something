@@ -2,15 +2,10 @@ var like=document.getElementsByClassName('item qz_like_btn_v3')[0];
 var user;
 var mode;
 var like_mode;
-chrome.runtime.sendMessage('This string has no use', function(response){
-	mode=response[0];
-	user=response[1];
-	like_mode=response[2];
-});
 
 function presslike_mode0()
 {
-
+	
 }
 
 function presslike_mode1()
@@ -53,6 +48,14 @@ function changeLikeButton_mode1(i)
 
 function runScripts()
 {
+	chrome.runtime.sendMessage('This string has no use', function(response){
+	mode=response[0];
+	user=response[1];
+	like_mode=response[2];
+	});
+
+	console.log(user);		//测试用
+
 	if(mode==0)
 	{
 		presslike_mode0();
